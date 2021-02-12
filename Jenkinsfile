@@ -83,7 +83,7 @@ pipeline {
         stage('Build and Push Image ') {
             steps {
                 script {
-                    docker.withRegistry('192.168.1.116:5000', "$NEXUS_CREDENTIAL_ID") {
+                    docker.withRegistry('https://192.168.1.116:5000', "$NEXUS_CREDENTIAL_ID") {
                         def customImage = docker.build("192.168.1.116:5000/image/springtest:$VERSION")
                             customImage.push()
 
