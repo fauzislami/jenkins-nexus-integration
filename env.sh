@@ -1,0 +1,7 @@
+export BASE_IMAGE="openjdk"
+export ARTIFACT_NAME="gs-actuator-service-0.1.0.jar"
+export APPLICATION_PORT_0="9000"
+export APPLICATION_PORT_1="9001"
+export APPLICATION_NAME="springtest"
+export OCP_ENVIRONMENT="dev"
+export VERSION="1"
